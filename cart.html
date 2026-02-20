@@ -1,73 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <title>Shopping Cart</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header>
+    <h1>Your Cart</h1>
+</header>
 
-    <header>
+<main>
 
-        <h1>Your Cart</h1>
+    <ul class="cart">
 
-    </header>
+        <li>
+            <h3>Pink Summer Dress</h3>
+            <p class="price">799</p>
 
+            <label>Quantity:</label>
+            <input type="number" value="1">
+        </li>
 
+    </ul>
 
-    <main>
+    <section>
+        <h3>Subtotal: <span class="price">799</span></h3>
 
-        <ul>
+        <a href="checkout.html">
+            <button>Proceed to Checkout</button>
+        </a>
+    </section>
 
-            <li>
-
-                <h3>Pink Summer Dress</h3>
-
-                <p>₱799</p>
-
-                <label>Quantity:</label>
-
-                <input type="number" value="1">
-
-            </li>
-
-        </ul>
-
-
-
-        <section>
-
-            <h3>Subtotal: ₱799</h3>
-
-            <a href="checkout.html">
-
-                <button>
-                    Proceed to Checkout
-                </button>
-
-            </a>
-
-        </section>
-
-
-
-        <section>
-
-            <p>Your cart is currently empty.</p>
-
-        </section>
-
-
-
-    </main>
-
-
+</main>
 
 </body>
-
 </html>

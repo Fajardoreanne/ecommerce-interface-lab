@@ -1,93 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <title>Product Detail</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header>
+    <h1>Pink Summer Dress</h1>
+</header>
 
-    <header>
+<main>
 
-        <h1>Pink Summer Dress</h1>
+    <table>
+        <tr>
+            <th>Material</th>
+            <td>Cotton</td>
+        </tr>
 
-    </header>
+        <tr>
+            <th>Size</th>
+            <td>Small, Medium, Large</td>
+        </tr>
 
+        <tr>
+            <th>Color</th>
+            <td>Pink</td>
+        </tr>
+    </table>
 
+    <form action="cart.html" method="get">
+        <label>Quantity:</label>
+        <input type="number" value="1" min="1">
 
-    <main>
+        <br><br>
 
-        <table border="1">
+        <button type="submit">Add to Cart</button>
+    </form>
 
-            <tr>
+    <section>
+        <h2>Reviews</h2>
 
-                <th>Material</th>
+        <article class="review">
+            <p>Very cute and comfortable!</p>
+        </article>
+    </section>
 
-                <td>Cotton</td>
-
-            </tr>
-
-
-            <tr>
-
-                <th>Size</th>
-
-                <td>Small, Medium, Large</td>
-
-            </tr>
-
-
-            <tr>
-
-                <th>Color</th>
-
-                <td>Pink</td>
-
-            </tr>
-
-        </table>
-
-
-
-        <form action="cart.html" method="get">
-
-            <label>Quantity:</label>
-
-            <input type="number" value="1" min="1">
-
-            <br><br>
-
-            <button type="submit">
-                Add to Cart
-            </button>
-
-        </form>
-
-
-
-        <section>
-
-            <h2>Reviews</h2>
-
-            <article>
-
-                <p>"Very cute and comfortable!"</p>
-
-            </article>
-
-        </section>
-
-
-
-    </main>
-
-
+</main>
 
 </body>
-
 </html>
