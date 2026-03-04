@@ -2,101 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
 <body>
-
 
     <header>
-
         <h1>Checkout</h1>
-
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </nav>
     </header>
-
-
 
     <main>
 
-        <form action="account.html" method="get">
+        <form action="account.html" method="get" class="checkout">
 
             <section>
 
                 <fieldset>
-
                     <legend>Shipping Address</legend>
 
-
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" required>
-
+                    <input type="text" id="name" name="name" required>
                     <br><br>
-
 
                     <label for="street">Street:</label><br>
-                    <input type="text" id="street" required>
-
+                    <input type="text" id="street" name="street" required>
                     <br><br>
 
-
                     <label for="zip">Zip Code:</label><br>
-                    <input type="text" id="zip" required>
-
-                    <br>
-
+                    <input type="text" id="zip" name="zip" required>
                 </fieldset>
-
-            </section>
-
-
-
-            <section>
-
-                <h3>Payment Method</h3>
-
-
-                <input type="radio" id="credit" name="payment" required>
-                <label for="credit">Credit Card</label>
 
                 <br>
 
+                <h3>Payment Method</h3>
+
+                <input type="radio" id="credit" name="payment" required>
+                <label for="credit">Credit Card</label>
+                <br>
 
                 <input type="radio" id="paypal" name="payment">
                 <label for="paypal">PayPal</label>
 
-                <br>
-
             </section>
-
-
 
             <aside>
 
                 <h3>Order Summary</h3>
 
-                <p>Pink Summer Dress: ₱799</p>
+                <p>Pink Summer Dress: <span class="price">799</span></p>
 
                 <p>
-                    <strong>Total: ₱799</strong>
+                    <strong>Total: <span class="price">799</span></strong>
                 </p>
 
                 <br>
 
-                <button type="submit">
-                    Place Order
-                </button>
+                <button type="submit">Place Order</button>
 
             </aside>
-
 
         </form>
 
     </main>
 
-
-
 </body>
-
 </html>

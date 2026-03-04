@@ -2,110 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautique - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
 <body>
-
 
     <header>
-
         <h1>Beautique</h1>
-
         <nav>
-
-            <ul>
-
-                <li>
-                    <a href="products.html">Dresses</a>
-                </li>
-
-                <li>
-                    <a href="products.html">Tops</a>
-                </li>
-
-                <li>
-                    <a href="products.html">Shoes</a>
-                </li>
-
-                <li>
-                    <a href="products.html">Accessories</a>
-                </li>
-
-            </ul>
-
+            <a href="products.html">Dresses</a>
+            <a href="products.html">Tops</a>
+            <a href="products.html">Shoes</a>
+            <a href="products.html">Accessories</a>
         </nav>
-
     </header>
-
-
 
     <main>
 
-        <section>
-
-            <h1>Welcome Beautique</h1>
-
-            <p>
-                Discover the latest fashion for girls. Cute, stylish, and affordable!
-            </p>
-
-            <button onclick="location.href='products.html'">
-                Shop Now
-            </button>
-
+        <section class="hero">
+            <div>
+                <h2>Welcome to Beautique</h2>
+                <p>Discover the latest fashion for girls. Cute, stylish, and affordable!</p>
+                <button onclick="location.href='products.html'">Shop Now</button>
+            </div>
         </section>
 
-
-
-        <section>
-
-            <h2>Featured Products</h2>
-
-            <article>
-
+        <section class="products">
+            <article class="product-card">
                 <h3>Pink Summer Dress</h3>
-
-                <p>₱799</p>
-
+                <p class="price">799</p>
             </article>
 
-
-
-            <article>
-
+            <article class="product-card">
                 <h3>Floral Skirt</h3>
-
-                <p>₱599</p>
-
+                <p class="price">599</p>
             </article>
-
         </section>
 
-
-
-        <section>
-
-            <h2>Discounted Products</h2>
-
-            <article>
-
+        <section class="products">
+            <article class="product-card">
                 <h3>Crop Top</h3>
-
                 <p>
-                    <del>₱499</del> ₱299
+                    <del class="price">499</del>
+                    <span class="price">299</span>
                 </p>
-
             </article>
-
         </section>
 
     </main>
 
-
-
 </body>
-
 </html>

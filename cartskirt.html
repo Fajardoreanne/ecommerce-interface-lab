@@ -1,73 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
     <header>
-
         <h1>Your Cart</h1>
-
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
     </header>
 
+    <main class="container">
 
+        <ul class="cart-items">
 
-    <main>
-
-        <ul>
-
-            <li>
-
+            <li class="cart-item">
                 <h3>Floral Skirt</h3>
-
-                <p>₱599</p>
-
-                <label>Quantity:</label>
-
-                <input type="number" value="1">
-
+                <p class="price">599</p>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" name="quantity1" value="1" min="1" required>
             </li>
 
         </ul>
 
-
-
-        <section>
-
-            <h3>Subtotal: ₱599</h3>
-
-            <a href="checkout.html">
-
-                <button>
-                    Proceed to Checkout
-                </button>
-
-            </a>
-
+        <section class="checkout-summary">
+            <h3>Subtotal: <span class="price">599</span></h3>
+            <button onclick="location.href='checkout.html'">Proceed to Checkout</button>
         </section>
 
-
-
-        <section>
-
+        <section class="cart-empty">
             <p>Your cart is currently empty.</p>
-
         </section>
-
-
 
     </main>
 
-
-
 </body>
-
 </html>
